@@ -47,6 +47,18 @@
   box-sizing: border-box;
 }
 
+.boton-volver{
+  background: #2c3e50; 
+  color: white;
+  border-radius: 0.25em;
+  border:none;
+}
+
+.boton-volver:hover{
+  background-color: #262a2e; 
+
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;

@@ -1,5 +1,6 @@
 @extends('layout.principal')
 
+
 @section('user')
 <li class="nav-item dropdown no-arrow">
 

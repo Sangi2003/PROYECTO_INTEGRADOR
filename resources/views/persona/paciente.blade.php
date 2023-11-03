@@ -39,7 +39,7 @@
 @endSection
 
 @section('componentes')
-<a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
+<a class="nav-link collapsed" style="text-align: center" href="{{ url('/evento') }}" aria-expanded="true" >
     <span>GENERAR CITA</span>
 </a>
 <a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
