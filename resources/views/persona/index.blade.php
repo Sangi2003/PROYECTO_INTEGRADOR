@@ -4,21 +4,26 @@
 <li class="nav-item dropdown no-arrow">
 
     <a class="nav-i-r" href="{{url('login')}}" id="userDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="d-none d-lg-inline text-gray-600 small">INICIO SESION</span>
+        <span class="d-none d-lg-inline text-gray-600 small" style="font-size: 15px">INICIO SESION</span>
     </a>
     <a class="nav-i-r" href="{{url('register')}}" id="userDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <span class="d-none d-lg-inline text-gray-600 small">REGISTRO</span>
+        <span class="d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin: 0 40px 0 20px">REGISTRO</span>
     </a>
                             
 </li>
 @endSection
 
 @section('componentes')
-<a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
-    <span>QUIENES SOMOS</span>
+
+<a class="nav-link collapsed" style="text-align: center" href="#quienesSomos" aria-expanded="true" >
+    <span>QUIÉNES SOMOS</span>
 </a>
-<a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
+<a class="nav-link collapsed" style="text-align: center" href="#nuestroEquipo" aria-expanded="true" >
     <span>NUESTRO EQUIPO</span>
 </a>
+<a class="nav-link collapsed" style="text-align: center" href="#mision-vision" aria-expanded="true" >
+    <span>MISION Y VISION</span>
+</a>
+
 
 @endsection

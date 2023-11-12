@@ -51,6 +51,11 @@ class User extends Authenticatable
     {   
         return $this->belongsToMany('App\Models\Role')->withTimestamps();
     }
+
+    public function eventos()
+    {   
+        return $this->belongsToMany('App\Models\Evento')->withTimestamps();
+    }
     
     public function especialidades()
     {   

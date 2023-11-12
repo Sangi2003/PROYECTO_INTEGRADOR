@@ -46,6 +46,23 @@
 *::after {
   box-sizing: border-box;
 }
+/*INICIO CSS AGREGADO*/
+.div-imagen{
+  width: 100%;
+  height: 80%;
+}
+
+.texto-perfil{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+.imagen-perfil{
+  width: 100%;
+  height: 100%;
+  padding: 50px 85px 50px 85px;
+}
 
 .boton-volver{
   background: #2c3e50; 
@@ -58,6 +75,108 @@
   background-color: #262a2e; 
 
 }
+
+.titulo{
+  height: 35%; 
+  width: 100%; 
+  background: white;
+  display: inline-flex;
+  border: 2px solid #e6e6e6;
+  border-radius: 0.25em;
+}
+
+.titulo h2{
+  margin: auto;
+  color: black;
+}
+
+.titulo img{
+  padding: 20px;
+}
+
+.m-v{
+  width: 49%;
+  display: inline-block;
+  height: 250px;
+}
+
+.texto-m-v{
+  height: 65%;
+  background: #4e73df;
+  border-radius: 0.25em;
+}
+
+.texto-m-v h5{
+  padding: 10px;
+  text-justify: auto;
+  text-align: center;
+  color: white;
+}
+
+.imagen-q-s{
+  width: 100%; 
+  height: 100%; 
+  padding: 10px;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.imagen-n-e{
+  width: 100%; 
+  height: 100%; 
+  padding: 60px 0 60px 0;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.imagen-m-v{
+  width: 100%; 
+  height: 100%; 
+  padding: 10px;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.especialistas{
+  width: 49%;
+  display: inline-flex;
+  height: 250px;
+}
+
+.fotos{
+  width: 45%; 
+  height: 100%;
+  background-color: white;  
+  display: inline-block;
+}
+
+.fotos img{
+  width: 100%; 
+  height: 100%;
+  padding: 15px 10px 15px 5px;
+  border-radius: 3em;
+}
+
+.texto{
+  color: white;
+  width: 50%; 
+  height: 100%;
+  background: #1cc88a;
+  display: inline-block;
+  border-radius: 1em;
+}
+
+.texto h5{
+  margin: 50px 0 20px 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+.texto p{
+  text-shadow: 1px 1px 2px black;
+}
+
+
+/*FIN CSS AGREGADO*/
 
 html {
   font-family: sans-serif;

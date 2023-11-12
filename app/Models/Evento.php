@@ -23,4 +23,8 @@ class Evento extends Model
     ];
 
     protected $fillable=['title','user_id','selector', 'doctor_id', 'descripcion', 'start', 'hora_cita', 'color'];
-}
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }}

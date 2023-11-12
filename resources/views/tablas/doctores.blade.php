@@ -4,8 +4,47 @@
 DOCTORES
 @endSection
 
+
 @section('usuario')
 {{ Auth::user()->name }}
+@endSection
+
+@section('tabla')
+<thead>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Documento</th>
+        <th>Direccion</th>
+        <th>Correo</th>
+        <th>Telefono</th>
+    </tr>
+</thead>
+<tfoot>
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Documento</th>
+        <th>Direccion</th>
+        <th>Correo</th>
+        <th>Telefono</th>
+    </tr>
+</tfoot>
+<tbody>
+    @foreach($users as $user)
+    <tr>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->name }}</td>
+        <td>{{ $user->last_name }}</td>
+        <td>{{ $user->document }}</td>
+        <td>{{ $user->adress }}</td>
+        <td>{{ $user->email }}</td>
+        <td>{{ $user->tel }}</td>
+    </tr>
+    @endforeach
+</tbody>
 @endSection
 
 @section('componentes')
@@ -15,10 +54,7 @@ DOCTORES
 <a class="nav-link collapsed" style="text-align: center" href="{{url('doctores')}}" aria-expanded="true" >
     <span>DOCTORES</span>
 </a>
-<a class="nav-link collapsed" style="text-align: center" href="{{url('secretarias')}}" aria-expanded="true" >
-    <span>SECRETARIAS</span>
-</a>
-<a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
+<a class="nav-link collapsed" style="text-align: center" href="{{ url('citasAdmin')}}" aria-expanded="true" >
     <span>CITAS</span>
 </a>
 <a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >

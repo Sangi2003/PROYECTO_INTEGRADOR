@@ -27,5 +27,10 @@ class Especialidades extends Seeder
         $espe->name = 'pediatra';
         $espe->description = 'Pediatría';
         $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'aneste';
+        $espe->description = 'Anestesiología';
+        $espe->save(); 
     }
 }

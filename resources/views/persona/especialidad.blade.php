@@ -46,9 +46,10 @@
                                         <div class="form-group">
                                             <select name="especialidad" id="especialidad" class="form-control form-control-user">
                                                 <option value="" disabled selected>Selecciona una opción</option>
-                                                <option value="1">Otorrinolaringologo</option>
-                                                <option value="2">Medico General</option>
-                                                <option value="3">Pediatra</option>
+                                                @foreach ($especialidad as $espe)
+                                                    <option value="{{$espe->id}}">{{ $espe->description }}</option>
+                                                @endforeach
+
                                             </select>
                                         </div>
                                 

@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::resource('persona', 'App\Http\Controllers\PersonaController');
+Route::get('vistaCO', 'App\Http\Controllers\PersonaController@vistaCO');
 
 Route::resource('especialidad', 'App\Http\Controllers\EspecialidadController');
 
@@ -26,11 +27,17 @@ Route::get('adminR', 'App\Http\Controllers\PersonaController@adminView');
 Route::get('pacienteR', 'App\Http\Controllers\PersonaController@pacienteView');
 Route::get('doctorR', 'App\Http\Controllers\PersonaController@doctorView');
 Route::get('secretariaR', 'App\Http\Controllers\PersonaController@secretariaView');
+Route::get('perfil', 'App\Http\Controllers\PersonaController@perfil')->name('perfil.perfil');
+Route::match(['put','patch'], 'perfil', 'App\Http\Controllers\PersonaController@actualizar')->name('perfil.actualizar');
 
 //tablas
 Route::get('pacientes', 'App\Http\Controllers\Tabla@pacientesView');
 Route::get('doctores', 'App\Http\Controllers\Tabla@doctoresView');
 Route::get('secretarias', 'App\Http\Controllers\Tabla@secretariasView');
+
+Route::get('citasPacientes', 'App\Http\Controllers\Tabla@citasPacientes');
+Route::get('citasDoctores', 'App\Http\Controllers\Tabla@citasDoctores');
+Route::get('citasAdmin', 'App\Http\Controllers\Tabla@citasAdmin');
 
 //agenda
 Route::get('/evento', [EventoController::class, 'index']);

@@ -48,8 +48,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
 
-                        <a href="{{url('pacienteR')}}">
-                            <button class="boton-volver boton-volver:hover" href="{{url('pacienteR')}}">VOLVER</button>
+                        <a href="javascript:history.back()">
+                            <button class="boton-volver boton-volver:hover" href="">VOLVER</button>
                         </a>
 
 
@@ -74,7 +74,17 @@
                                 
 
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <img class="img-profile rounded-circle" style="height:45px" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" style="height:45px"
+
+                                <?php  
+                                if (Auth::user()->hasRole("paciente")) {
+                                    $imagen = "img/PACIENTE.png";
+                                } elseif (Auth::user()->hasRole("doctor")){
+                                    $imagen = "img/DOCTOR.png";
+                                }                               
+                                ?>
+
+                                src = {{$imagen}} >
 
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
 

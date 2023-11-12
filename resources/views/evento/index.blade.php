@@ -61,11 +61,9 @@
             <select name="selector" class="form-select" id="selector" aria-label="Default select example">
                 <option value="" disabled selected>Selecciona una categoría</option>
                 @foreach ($especialidad as $espe)
-                <option value="{{ $espe->id }}">{{ $espe->description }}</option>
+                  <option value="{{ $espe->id }}">{{ $espe->description }}</option>
                 @endforeach
             </select>
-
-            
 
             <label for="doctor_id">Doctores:</label>
             <select name="doctor_id" class="form-select" id="doctor_id" aria-label="Default select example"  onchange="cambiarElementos()">

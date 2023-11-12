@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Especialidad;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Role;
@@ -14,7 +15,7 @@ class UserTableSeeder extends Seeder
      */
     public function run(): void
     {
-        /*$user = new User();
+        $user = new User();
         $user->name = "Santiago";
         $user->last_name = "Giron Lozano";
         $user->document = "1005893342";
@@ -37,6 +38,7 @@ class UserTableSeeder extends Seeder
         $user->save();
 
         $user->roles()->attach(Role::where('name', 'doctor')->first());
+        $user->especialidades()->attach(Especialidad::where('name', 'otorrino')->first());
 
         $user = new User();
         $user->name = "Julian Andres";
@@ -48,6 +50,20 @@ class UserTableSeeder extends Seeder
         $user->password = "norig2003";
         $user->save();
 
-        $user->roles()->attach(Role::where('name', 'doctor')->first()); */
+        $user->roles()->attach(Role::where('name', 'doctor')->first());
+        $user->especialidades()->attach(Especialidad::where('name', 'aneste')->first()); 
+
+        $user = new User();
+        $user->name = "Andres Mauricio";
+        $user->last_name = "Muñoz Puyo";
+        $user->document = "12345678";
+        $user->adress = "En el sur";
+        $user->email = "andrespuyo@gmail.com";
+        $user->tel = "3106017492";
+        $user->password = "norig2003";
+        $user->save();
+
+        $user->roles()->attach(Role::where('name', 'admin')->first()); 
+        
     }
 }

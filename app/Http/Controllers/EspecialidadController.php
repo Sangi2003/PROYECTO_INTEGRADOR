@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Especialidad_user;
 use App\Models\User;
+use App\Models\Especialidad;
+
 
 
 use Illuminate\Http\Request;
@@ -12,7 +14,10 @@ use Illuminate\Http\Request;
 class EspecialidadController extends Controller
 {
     public function index()
-    {  return view("persona.especialidad"); }
+    {  
+        $esp = Especialidad::all();  
+        return view("persona.especialidad")->with('especialidad',$esp); 
+    }
 
     public function store(Request $request){
 
