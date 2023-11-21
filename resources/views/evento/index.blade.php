@@ -2,38 +2,33 @@
 
 @section('script')
 <script>
-        function cambiarElementos(){
+function cambiarElementos(){
+  const categoriaSelect = document.getElementById('selector');
+  const elementoSelect = document.getElementById('doctor');
+  categoriaSelect.addEventListener('change', function () {
+    const selectedCategoria = categoriaSelect.value;
+                      
+    // Limpiar el segundo select
+    elementoSelect.innerHTML = '<option value="">Selecciona un elemento</option>';
 
-              const categoriaSelect = document.getElementById('selector');
-              const elementoSelect = document.getElementById('doctor');
-
-              categoriaSelect.addEventListener('change', function () {
-                  const selectedCategoria = categoriaSelect.value;
-                  
-                  // Limpiar el segundo select
-                  elementoSelect.innerHTML = '<option value="">Selecciona un elemento</option>';
-                  
-                  // Filtrar y agregar opciones al segundo select
-                  if (selectedCategoria) {
-                      const elementos = document.querySelectorAll('#doctor option');
-                      elementos.forEach(function (doctor) {
-                          if (doctor.getAttribute('data-categoria') === selectedCategoria) {
-                              elementoSelect.appendChild(doctor.cloneNode(true));
-                          }
-                      });
-                  }
-              });
-            }
-            </script>
+    // Filtrar y agregar opciones al segundo select
+    if (selectedCategoria) {
+      const elementos = document.querySelectorAll('#doctor option');
+      elementos.forEach(function (doctor) {
+        if (doctor.getAttribute('data-categoria') === selectedCategoria) {
+          elementoSelect.appendChild(doctor.cloneNode(true));
+        }
+      });
+    }
+  });
+}
+</script>
 @endsection
 
 @section('content')
 
 <div class="container">
-
-    <div id="agenda">
-    </div>
-
+  <div id="agenda"></div>
 </div>
   
   <!-- Modal -->

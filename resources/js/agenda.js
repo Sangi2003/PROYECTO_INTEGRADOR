@@ -15,7 +15,7 @@ window.onload = () => {
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth,listWeek'
+      right: 'dayGridMonth,listWeek',
     },
 
     dateClick: function (info) {
@@ -24,14 +24,41 @@ window.onload = () => {
       formulario.start.value = info.dateStr;
       var a = formulario.start.value;
       const fec = a;
+
+      var fechaActual = new Date()
+      var fechaActualModificada = fechaActual.getFullYear() + '-' + (fechaActual.getMonth() + 1) + '-' + fechaActual.getDate();
+
       var numDia = new Date(fec).getDay();
-    
-      if((numDia == "6")){
+      
+      
+      if((fec <= fechaActualModificada)){
+        alert("Este día ya pasó")
+      }else if ((numDia == "6")){
         alert("No hay atencion los dias Domingos")
       }else if((numDia == "1" || numDia == "2" || numDia == "3" || numDia == "4" || numDia == "5" || numDia == "6" )){
           $("#evento").modal("show")
       };
 
+    },
+
+    /*dayRender: function(info)
+    {
+      var today = moment();
+      console.log(today);
+        // Comparar la fecha actual con la fecha del día que se está renderizando
+      if (date.isBefore(today, 'day')) {
+        // Aplicar el estilo para los días pasados
+        cell.css('background', 'red')
+      }
+    },*/
+
+    dayRender: function(info) {                     
+      var today = new Date();                     
+      today.setHours(0, 0, 0, 0); 
+      // Establecer la hora a medianoche para comparaciones de fecha                     
+      if (info.date < today) {                         
+        info.dayEl.style.backgroundColor = '#f5f5f5'; // Cambiar el color de fondo para fechas pasadas  
+      }                 
     },
 
     eventClick: function (info) {
