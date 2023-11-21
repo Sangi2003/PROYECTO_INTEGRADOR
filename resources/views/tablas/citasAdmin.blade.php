@@ -39,13 +39,16 @@ CITAS
     <tr>
         <td>{{ $cita->id}}</td>
         <td>{{ $cita->title }}</td>
-        <td>{{ $cita->user->name }}</td>
         <?php
-            $tipo_cita = DB::table('especialidads')->where('id', $user->selector)->value('description');
+            $paciente = DB::table('users')->where('id', $cita->user_id)->value('name');
+        ?>
+        <td>{{$paciente}}</td>
+        <?php
+            $tipo_cita = DB::table('especialidads')->where('id', $cita->selector)->value('description');
         ?>
         <td>{{$tipo_cita}}</td>
         <?php
-            $doctor = DB::table('users')->where('id', $user->doctor_id)->value('name');
+            $doctor = DB::table('users')->where('id', $cita->doctor_id)->value('name');
         ?>
         <td>{{$doctor}}</td>
         <td>{{ $cita->descripcion }}</td>

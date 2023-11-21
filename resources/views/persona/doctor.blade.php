@@ -34,7 +34,7 @@
 
     <span>Especialista en: <br>
     @if (Auth::user()->getEspeciality())
-        <p>{{ Auth::user()->getEspeciality()->description }}</p>
+        <p>{{ Auth::user()->getEspeciality()->description}}</p>
     @else
         <p>No tiene una especialidad asignada.</p>
     @endif
