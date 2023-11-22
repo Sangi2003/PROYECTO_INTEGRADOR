@@ -69,7 +69,5 @@ CITAS
 <a class="nav-link collapsed" style="text-align: center" href="{{ url('citasAdmin')}}" aria-expanded="true" >
     <span>CITAS</span>
 </a>
-<a class="nav-link collapsed" style="text-align: center" href="" aria-expanded="true" >
-    <span>REPORTES</span>
-</a>
+
 @endsection

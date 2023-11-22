@@ -64,39 +64,40 @@
         <!-- Heading -->
 
         <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Clínica de Occidente:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">Calle 18 Norte No. 5 - 34</p>
-        </li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; margin-top: 120px; color:rgba(255, 255, 255, 0.6);">Clínica de Occidente:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">Calle 18 Norte No. 5 - 34</p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Centro Integral de Cáncer:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">Calle 19 Norte No. 5N - 49 </p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">Centro Integral de Cáncer:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">Calle 19 Norte No. 5N - 49 </p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Sede Administrativa:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">Av. 5 Norte No. 17N - 93</p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">Sede Administrativa:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">Av. 5 Norte No. 17N - 93</p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Centro de Especialistas:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">Av. 5AN No. 19N - 12</p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">Centro de Especialistas:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">Av. 5AN No. 19N - 12</p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Laboratorio Clínico:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">Av. 5 No. 18N-02</p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">Laboratorio Clínico:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">Av. 5 No. 18N-02</p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">PBX:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);"> 660 3000 Cali</p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">PBX:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);"> 660 3000 Cali</p>
+            </li>
 
-        <li>
-            <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:white;">Central de citas:</p>
-            <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.6);">(602) 380 07 42 Cali - Colombia</p>
-        </li>
+            <li>
+                <p class="nav-link" style="margin:0 0 0 10px; padding:0; color:rgba(255, 255, 255, 0.6);">Central de citas:</p>
+                <p class="nav-link" style="margin:0 0 10px 15px; padding:0; color:rgba(255, 255, 255, 0.2);">(602) 380 07 42 Cali - Colombia</p>
+            </li>
+
 
         </ul>
         <!-- End of Sidebar -->
