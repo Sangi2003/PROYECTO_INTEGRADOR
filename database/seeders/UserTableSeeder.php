@@ -54,6 +54,45 @@ class UserTableSeeder extends Seeder
         $user->especialidades()->attach(Especialidad::where('name', 'aneste')->first()); 
 
         $user = new User();
+        $user->name = "Adriana";
+        $user->last_name = "Lozano Zamorano";
+        $user->document = "66840413";
+        $user->adress = "Cra 54 # 32a - 24";
+        $user->email = "alz@gmail.com";
+        $user->tel = "3174125345";
+        $user->password = "norig2003";
+        $user->save();
+
+        $user->roles()->attach(Role::where('name', 'doctor')->first());
+        $user->especialidades()->attach(Especialidad::where('name', 'aneste')->first()); 
+
+        $user = new User();
+        $user->name = "Johns James";
+        $user->last_name = "Giron Lozano";
+        $user->document = "94707431";
+        $user->adress = "Cra 74 # 23b - 46";
+        $user->email = "joarasan@gmail.com";
+        $user->tel = "3152341665";
+        $user->password = "norig2003";
+        $user->save();
+
+        $user->roles()->attach(Role::where('name', 'doctor')->first());
+        $user->especialidades()->attach(Especialidad::where('name', 'aneste')->first()); 
+
+        $user = new User();
+        $user->name = "Camila";
+        $user->last_name = "Rosero Noguera";
+        $user->document = "94145634";
+        $user->adress = "Cra 17f # 31 - 23";
+        $user->email = "camirn@gmail.com";
+        $user->tel = "318123991";
+        $user->password = "norig2003";
+        $user->save();
+
+        $user->roles()->attach(Role::where('name', 'doctor')->first());
+        $user->especialidades()->attach(Especialidad::where('name', 'aneste')->first()); 
+
+        $user = new User();
         $user->name = "Andres Mauricio";
         $user->last_name = "Muñoz Puyo";
         $user->document = "12345678";

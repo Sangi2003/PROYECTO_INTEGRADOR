@@ -32,5 +32,46 @@ class Especialidades extends Seeder
         $espe->name = 'aneste';
         $espe->description = 'Anestesiología';
         $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'cardio';
+        $espe->description = 'Cardiología';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'gastro';
+        $espe->description = 'Gastroenterología';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'gineco';
+        $espe->description = 'Ginecología';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'psico';
+        $espe->description = 'Psicología';
+        $espe->save(); 
+   
+        $espe = new Especialidad();
+        $espe->name = 'psiquia';
+        $espe->description = 'Psiquiatría';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'ortope';
+        $espe->description = 'Ortopedia';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'neuro';
+        $espe->description = 'Neurología';
+        $espe->save(); 
+
+        $espe = new Especialidad();
+        $espe->name = 'oftal';
+        $espe->description = 'Oftalmología';
+        $espe->save(); 
+    
     }
 }
